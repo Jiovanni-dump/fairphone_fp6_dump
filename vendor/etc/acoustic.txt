@@ -1,0 +1,84 @@
+; Acoustics version of fps
+; fps acdb version history
+-------20241227---------
+Version:0.1.0.12
+-------20250115---------
+Version:0.1.0.16
+-------20250115---------
+Version:0.1.0.17
+-------20250218---------
+FP6_DVT1-1_for MINI MMI ADT test_20250217.zip
+Version:0.1.0.18
+-------20250227---------
+FP6_DVT1-1_for MINI MMI ADT test_V02_20250227.rar
+修改142和151 volume control 增益为-1，并disable SGKV Speaker 下的SKT，同时将AFE保护模块的单频音保护部分关闭
+---------20250303---------------
+DVT1-1	FP6_V01_20250303	First audio parameters verstion, merge AW SKT and AFE AW RX MODULE in speaker SGKV
+---------20250318-----V07----------
+FP6_V02_20250318.zip
+merge AW SKT and mec, merge the handset audio parameter.
+And speaker mode and playback mode use different mec setting.
+---------20250324-----V08----------
+20250322-HAC-4.zip
+这份参数在3月18日的参数基础上修改了金鑫要求的如下两个RX通路的MFC，具体如下截图，附件是参数，请帮忙确认HAC功能。
+MFC内部修改参照高通case的acdb文件，如下MFC为8k 16bit采样，区分L/R通路
+如下MFC采样为48k 32bit,区分L/R声道
+---------20250325-----V09----------
+FP6_V04_20250325.zip
+merge Cellular call audio parameters(include handset,handsfree,USB headset and BT)
+---------20250331-----V10----------
+FP6_V10_20250328.zip
+merge VOIP and HAC parameters.  Modify the versition to V10 to follow SW versition
+---------20250407-----V11----------
+FP6_V11_20250405.zip
+merge VOIP and HAC parameters, modify cellular call SWB audio parameter.
+Modify AW aw882xx_acf.bin, receiver mode increase 6dB.
+---------20250414-----V12----------
+FP6_V12_20250412.zip
+modify Cellular call HHRX RFR and merge the HE playback volume for EN50332
+---------20250417-----V13----------
+FP6_V13_20250416.zip
+modify VOIP handset and handsfree call noise issue，and modify recording low speech issue
+---------20250422-----V14----------
+FP6_V14_20250421.zip
+modify Cellular call Handset mode TX FNN module
+---------20250423-----V15----------
+FP6_V15_20250422.zip
+modify playback AW parameter V4 (SKT and MEC), modify recording, merge VOIP V04
+---------20250425-----V16----------
+FP6_V16_20250423.zip
+modify recording
+---------20250425-----V17----------
+FP6_V17_20250425.zip
+modify the Cellular handset FNN(disable music detection), tuning the RX and TX IIR for GCF and Orange
+---------20250506-----V18----------
+FP6_V18_20250430.zip
+modify the Cellular handset RX NB and WB -2dB,
+and modify CTSV 208 +6dB，merge the VOIP  V05, modify the voip Handsfree echo hoiling issue,
+modify the VOIP handset /handsfree/BT/USB headset RX noise issue.
+Modify recording
+---------20250425-----V19----------
+FP6_V19_20250514.zip
+modify the Ceallular handset SWB RX IIR / WB IIR and handsfree WB and SWB TX IIR for orange and HD voice
+merge the SKT V08 for playback
+modify the recording for mono/ stereo mode and USB headset mode
+modify the VOIP call parameters
+modify the HAC2019 parameters
+---------20250527-----V20----------
+FP6_V20_20250526.zip
+modify the Ceallular handsfree RX and TX IIR for orange
+---------20250527-----V21----------
+FP6_V21_20250530.zip
+modify the Ceallular SWB mode handsfree  TX IIR and Gain for orange
+And modify the Handsfree NB and WB RX volume step4  -3dB and -4dB for same as the xiaomi 13T pro
+---------20250527-----V22----------
+FP6_V22_20250603.zip
+merge AW SKT V9-1 for Sam
+-----------------------------------
+FP6_V23_20250603.zip
+merge AW SKT V9-2 for Sam
+-----------------------------------
+FP6_V24_20250606.zip
+base on V23 and modify the Handsfree RX volume step4 gain -4dB. And modify the BT NB and WB IIR(TX and RX)
+-----------------------------------
+-----------------------------------

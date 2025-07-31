@@ -1,0 +1,11 @@
+service diag_service /vendor/bin/diag_service
+    class core
+    disabled
+    group root
+    seclabel u:r:diag_service:s0
+
+on property:ro.boot.inproductionflag=true
+    start diag_service
+
+on property:dev.fp.MMITest=true
+    start diag_service

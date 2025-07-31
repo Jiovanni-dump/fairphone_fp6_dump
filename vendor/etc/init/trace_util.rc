@@ -1,0 +1,23 @@
+#on post-fs
+#    exec u:r:trace_util:s0 root root -- /vendor/bin/trace_util --sync-prop
+
+#on property:vold.decrypt=trigger_restart_framework && property:ro.ecid=544
+#    exec u:r:trace_util:s0 root root -- /vendor/bin/trace_util --sync-qcnv
+
+on property:vendor.fp.camera_front.sn=*
+    exec u:r:tctd:s0 root root -- /vendor/bin/trace_util w 15 ${vendor.fp.camera_front.sn}
+
+on property:vendor.fp.camera_main.sn=*
+    exec u:r:tctd:s0 root root -- /vendor/bin/trace_util w 16 ${vendor.fp.camera_main.sn}
+
+on property:vendor.fp.camera_aux.sn=*
+    exec u:r:tctd:s0 root root -- /vendor/bin/trace_util w 17 ${vendor.fp.camera_aux.sn}
+
+#on property:vendor.fp.camera_main.vcm_id=*
+#    exec u:r:tctd:s0 root root -- /vendor/bin/trace_util w 18 ${vendor.fp.camera_main.vcm_id}
+
+on property:vendor.fp.lcd.sn=*
+    exec u:r:tctd:s0 root root -- /vendor/bin/trace_util w 18 ${vendor.fp.lcd.sn}
+
+on property:sys.first_skip_setup=1
+	exec u:r:tctd:s0 root root -- /vendor/bin/trace_util s 1574 30
