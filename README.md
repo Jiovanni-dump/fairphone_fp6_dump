@@ -1,0 +1,14 @@
+# qssi_64-user 15 FP6.QREL.15.105.0 VS1C release-keys
+- manufacturer: fairphone
+- platform: volcano
+- codename: FP6
+- flavor: qssi_64-user
+- release: 15
+- id: FP6.QREL.15.105.0
+- incremental: VS1C
+- tags: release-keys
+- fingerprint: Fairphone/FP6/FP6:15/FP6.QREL.15.105.0/VS1C:user/release-keys
+- is_ab: true
+- brand: Fairphone
+- branch: qssi_64-user-15-FP6.QREL.15.105.0-VS1C-release-keys
+- repo: fairphone_fp6_dump
